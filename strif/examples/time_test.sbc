@@ -1,0 +1,11 @@
+{
+  "intents": [
+    "alarm exists"
+  ],
+  "flows": [
+    "alarm triggers bell after 3"
+  ],
+  "observe": [
+    "bell rings"
+  ]
+}

@@ -1,0 +1,11 @@
+scripture IRBuilder
+
+intent ast exists
+
+aim ir exists
+
+when ast exists
+after 2s
+flow
+    ir exists
+end

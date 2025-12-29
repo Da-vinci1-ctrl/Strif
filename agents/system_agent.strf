@@ -1,0 +1,16 @@
+scripture SystemGuardian
+
+intent system unstable
+
+aim system stable
+
+every 2s
+flow
+    observe system state
+end
+
+when system unstable
+after 4s
+flow
+    system stable
+end

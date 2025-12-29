@@ -1,0 +1,8 @@
+scripture TimeDemo
+intent
+    alarm exists
+flow
+    alarm triggers bell after 3
+observe
+    bell rings
+end

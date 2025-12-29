@@ -1,0 +1,9 @@
+scripture Greeting
+    intent
+        message exists as "Hello from Strif"
+        human exists
+    flow
+        message reaches human
+    observe
+        human receives message
+end
