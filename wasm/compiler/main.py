@@ -5,9 +5,9 @@ module, memory, trace = execute_strif_module(
 )
 
 print("INITIAL MEMORY:", memory.dump())
-print("\n🤖 STRIF AGENT STARTED\n")
+print("\n🤖 STRIF STARTED\n")
 
-run_strif_engine(module, memory, trace, duration=10)
+run_strif_engine(module, memory, trace)
 
 print("\nFINAL MEMORY:", memory.dump())
 trace.show()

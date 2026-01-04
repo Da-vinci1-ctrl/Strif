@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Strif WASM Test</h2>
+<button onclick="run()">Run</button>
+<pre id="out"></pre>
+
+<script>
+async function run() {
+  const res = await fetch("strif_core.wasm");
+  const bytes = await res.arrayBuffer();
+  const wasm = await WebAssembly.instantiate(bytes);
+
+  wasm.instance.exports.set_state(99);
+  document.getElementById("out").textContent =
+    "State = " + wasm.instance.exports.get_state();
+}
+</script>
+</body>
+</html>

@@ -14,3 +14,9 @@ after 4s
 flow
     system stable
 end
+ 
+scripture SystemAgent
+
+consult ai "hello system"
+
+end

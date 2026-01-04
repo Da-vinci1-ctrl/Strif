@@ -1,0 +1,10 @@
+scripture AIGuardian
+
+intent user_confused true
+aim user_helped true
+
+when user_confused true
+flow
+    consult ai "explain topic clearly"
+    user_helped true
+end

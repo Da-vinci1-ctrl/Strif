@@ -1,64 +1,24 @@
 # Strif
 
-**Strif** is an experimental, goal-driven programming language designed for
-**AI control, autonomous agents, and explainable reasoning systems**.
+Strif is an experimental, AI-native programming language designed around
+time, conditions, agents, and reasoning instead of traditional control flow.
 
-Strif is **not** a general-purpose programming language.
-It is a **control language** for systems that need:
-
-- Goals
-- Time
-- Conditions
-- Memory
-- Explainability
+Strif is **not** a wrapper over Python, Java, or C++.
+It has its own execution model and virtual machine.
 
 ---
 
-## Why Strif?
+## Features
 
-Most programming languages answer:
-> *How do I do this?*
-
-Strif answers:
-> **Why should this happen, when, and until what goal is satisfied?**
-
-This makes Strif suitable for:
-- AI agent orchestration
-- Autonomous systems
-- Planning & reasoning loops
-- Explainable AI control
+- Simple, readable syntax
+- AI-first primitives
+- Virtual Machine based execution
+- Installable CLI
+- Designed for future WASM compilation
 
 ---
 
-## Core Concepts
+## Installation
 
-Strif is built on five primitives:
-
-| Concept | Meaning |
-|------|--------|
-| `intent` | Initial state / memory |
-| `when` | Condition based on memory |
-| `after`, `every` | Time-based execution |
-| `aim` | Goal to satisfy |
-| `observe` | Human-readable explanation |
-
----
-
-## Example (Strif Agent)
-
-```strif
-scripture SystemGuardian
-
-intent system unstable
-aim system stable
-
-every 2s
-flow
-    observe system state
-end
-
-when system unstable
-after 4s
-flow
-    system stable
-end
+```bash
+pip install .
